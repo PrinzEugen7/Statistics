@@ -20,14 +20,13 @@ def line000(pos):
 
 
 def main():
-    ESC = 0x1B          # ESCキーの仮想キーコード
-    (x, y) = (0, 0)     # 初期値
-    plt.ion()           # 対話モードオン
-    im = cv2.imread("map.jpg") # 画像の取得
+    ESC = 0x1B              # ESCキーの仮想キーコード
+    (x, y) = (0, 0)         # 初期値
+    plt.ion()               # 対話モードオン
+    im = cv2.imread("test.jpg")  # 画像の取得
     im = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
-    plt.imshow(im)              # 画像貼り付け
-    while( y != 100 ):
-        plt.imshow(im)              # 画像貼り付け
+    while( y != 200 ):
+        plt.imshow(im)      # 画像貼り付け
         line, = plt.plot(x, y, "ro",label="y=x") # (x,y)のプロット
         line.set_ydata(y)   # y値を更新
         plt.title("Graph")  # グラフタイトル
@@ -35,8 +34,6 @@ def main():
         plt.ylabel("y")     # y軸ラベル
         plt.legend()        # 凡例表示
         plt.grid()          # グリッド表示
-        plt.xlim([0,476])    # x軸範囲
-        plt.ylim([0,331])    # y軸範囲
         plt.draw()          # グラフの描画
         plt.clf()           # 画面初期化
         x += 10
@@ -50,4 +47,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
