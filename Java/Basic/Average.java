@@ -10,7 +10,7 @@ class Main
                 for( int i=0; i<data.length; i++ ) {
                         sum += data[i];
                 }
-                double ave = ( (double)sum )/data.length;
+                double ave = sum/data.length;
                 System.out.println(ave);
         }
 }
