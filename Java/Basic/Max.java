@@ -8,7 +8,7 @@ class Main
     	float max = 0;
 		float[] data = { 1, 2, 3, 4, 5};
 		// 最大値を求める
-		for(int i=1; i < data.length;i++)
+		for(int i = 0; i < data.length; i++)
 			max = Math.max(max,data[i]);
 		System.out.println(max);
 	}
