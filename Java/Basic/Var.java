@@ -15,6 +15,7 @@ class Main
         for (int i=0; i<data.length; i++) {
             vars += ((data[i] - ave)*(data[i] - ave));
         }
-        System.out.println(vars/data.length);
+        double var = vars/data.length;
+        System.out.println(var);
     }
 }
