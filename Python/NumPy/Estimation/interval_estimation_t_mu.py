@@ -3,7 +3,8 @@ import numpy as np
 from scipy import stats
 
 def main():
-    (mu, sigma) = (10, 1)           # 正規分布に従う母集団の平均10, 標準偏差1
+    (mu, std) = (10, 1)             # 正規分布に従う母集団の平均10, 母分散1
+    sigma = np.sqrt(std)            # 母集団の標準偏差
     alpha = 0.95                    # 信頼係数95[%]
     ok = 0
     x = np.random.normal(mu, sigma, 50)     # 正規分布(mu, sigma)に従う正規分布からサイズ10の標本抽出
