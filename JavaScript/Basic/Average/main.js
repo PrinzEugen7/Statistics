@@ -11,5 +11,5 @@ function ave(data)
 function main()
 {
 	data = new Array(1, 2, 3, 4, 5); 
-	alert( "平均値　:　" + ave(data) );
+	alert( "計算結果　:　" + ave(data) );
 }
