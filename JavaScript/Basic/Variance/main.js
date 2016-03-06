@@ -1,28 +1,22 @@
-// 合計値を計算
-function sum(data)
+// 平均値の計算
+function average(data)
 {
     var sum = 0;
     for (i=0; i<data.length; i++) {
       sum = sum + data[i];
     }
-    return (sum);
+    return (sum / data.length);
 }
 
-// 平均値を計算
-function ave(data)
-{
-    return (sum(data) / data.length);
-}
-
-// 分散値を計算
+// 分散の計算
 function varia(data)
 {
-    var vari = 0;
-	var ave = ave(data);    // 平均値
+    var ave = average(data);    // 平均値
+    var varia = 0;
     for (i=0; i<data.length; i++) {
-		vari = vari + Math.pow(data[i] - ave, 2);
+        varia = varia + Math.pow(data[i] - ave, 2);
     }
-    return (vari / data.length);
+    return (varia / data.length);
 }
 
 // メイン
