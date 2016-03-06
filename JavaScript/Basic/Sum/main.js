@@ -1,4 +1,4 @@
-// 平均値を計算
+// 合計値を計算
 function sum(data)
 {
     var sum = 0;
@@ -11,5 +11,5 @@ function sum(data)
 function main()
 {
 	data = new Array(1, 2, 3, 4, 5); 
-	alert( "平均値　:　" + ave(data) );
+	alert( "計算結果　:　" + sum(data) );
 }
