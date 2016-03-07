@@ -1,5 +1,5 @@
 // 合計値の計算
-function calc_sum(data)
+function calcSum(data)
 {
     var sum = 0;
     for (i=0; i<data.length; i++) {
@@ -9,14 +9,14 @@ function calc_sum(data)
 }
 
 // 平均値の計算
-function calc_ave(data)
+function calcAve(data)
 {
-    return (calc_sum(data) / data.length);
+    return (calcSum(data) / data.length);
 }
 
 // メイン
 function main()
 {
 	data = new Array(1, 2, 3, 4, 5); 
-	alert( "計算結果　:　" + calc_ave(data) );
+	alert( "計算結果　:　" + calcAve(data) );
 }
