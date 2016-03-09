@@ -1,4 +1,4 @@
-// 正規分布の計算(平均 値, 分散σ^2)
+// 正規分布の計算(平均値, 標準偏差)
 var normRand = function (mu, sigma) {
     var a = 1 - Math.random();
     var b = 1 - Math.random();
