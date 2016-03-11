@@ -7,7 +7,7 @@ def main():
     sigma = np.sqrt(std)            # 母集団の標準偏差
     alpha = 0.95                    # 信頼係数95[%]
     ok = 0
-    x = np.random.normal(mu, sigma, 50)     # 正規分布(mu, sigma)に従う正規分布からサイズ10の標本抽出
+    x = np.random.normal(mu, sigma, 50)     # 正規分布(mu, sigma)に従う正規分布からサイズ50の標本抽出
     n = len(x)                              # 標本サイズnの取得
     t = stats.t.ppf(1-(1-alpha)/2, n-1)     # t分布を用いて確率変数tを計算
     xa, sigma = np.average(x), np.std(x)    # 標本の平均と分散を計算
