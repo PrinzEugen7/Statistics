@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 // 10進数(整数)を2進数（文字列）に変換
-char *int2bin(int x){
+char *int2bin(int x)
+{
     int i;
     static char bin[40];
     for(i=31; i>=0; i--){
