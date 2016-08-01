@@ -14,7 +14,11 @@ char *int2bin(int x)
 
 int main(void)
 {
-	int x = 10;
+	int x = 78;
+	int y = 52;
+	// 結果表示(2進数)
 	printf(" x = %s (%d)\n",int2bin( x ), x );
+	printf(" y = %s (%d)\n",int2bin( y ), y );
+	printf("x & y = %s (%d)\n",int2bin(x&y), x&y);
 	return 0;
 }
