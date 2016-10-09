@@ -42,8 +42,8 @@ namespace InverseFourierTransform
         {
             int size = inputRe.Length;
 
-            outputRe = new double[size];
-            outputIm = new double[size];
+            Re2 = new double[size];
+            Im2 = new double[size];
 
             for (int i = 0; i < size; i++)
             {
