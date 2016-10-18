@@ -5,7 +5,7 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace SmoothingFilter
+namespace FastFourierTransform
 {
     class Program
     {
@@ -25,7 +25,7 @@ namespace SmoothingFilter
             // 出力
             for (int i = 0; i < size; i++)
             {
-                Console.WriteLine("{0} {1} {2}", data[i], re[i], im[i]);
+                Console.WriteLine(data[i], re[i], im[i]);
             }
         }
         // 高速フーリエ変換
