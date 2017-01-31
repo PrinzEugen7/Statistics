@@ -6,7 +6,7 @@ class Main
 {
     public static void main( String[] args ) {
         double x = 30;
-		double ans = Math.toRadians(x);
+        double ans = Math.toRadians(x);
         System.out.println(ans);
     }
 }
