@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+import numpy as np
+import matplotlib.pyplot as plt
+
+def main():
+    # 乱数を100個生成
+    x = np.random.randn(100)
+    # ヒストグラムの描画
+    plt.hist(x, bins=20, color='g', width=0.3)
+    plt.show()
+
+if __name__ == '__main__':
+    main()
